@@ -1,0 +1,1 @@
+Certains investisseurs utilisent à la fois l'analyse technique et fondamentale pour prendre des décisions éclairées en bourse. Combiner ces deux approches peut offrir une vision plus complète des opportunités d'investissement.
