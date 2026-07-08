@@ -1,0 +1,38 @@
+.smart-organizer-list {
+  max-height: 60vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.smart-organizer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.4em 0.6em;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+}
+
+.smart-organizer-row-text {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.smart-organizer-row-actions {
+  display: flex;
+  gap: 0.4em;
+  flex-shrink: 0;
+}
+
+.smart-organizer-score {
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+.smart-organizer-empty {
+  color: var(--text-muted);
+  font-style: italic;
+}

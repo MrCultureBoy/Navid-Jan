@@ -1,0 +1,10 @@
+{
+  "id": "smart-link-organizer",
+  "name": "Smart Link Organizer",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Détecte les liens cassés, repère les notes en double ou similaires, et suggère des liens manquants dans ton vault.",
+  "author": "MrCultureBoy",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
