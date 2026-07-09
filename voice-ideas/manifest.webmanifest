@@ -1,0 +1,15 @@
+{
+  "name": "Mes Idées — Capture vocale",
+  "short_name": "Mes Idées",
+  "description": "Capturez vos idées instantanément à la voix.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5fb",
+  "theme_color": "#7c5cf6",
+  "lang": "fr",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

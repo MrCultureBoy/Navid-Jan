@@ -1,0 +1,60 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mes Idées — Capture vocale</title>
+<meta name="description" content="Capturez vos idées instantanément à la voix.">
+<meta name="theme-color" content="#7c5cf6">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+
+<div class="app">
+  <header class="topbar">
+    <h1>💡 Mes Idées</h1>
+    <div class="topbar-actions">
+      <select id="lang-select" title="Langue de reconnaissance vocale" aria-label="Langue de reconnaissance vocale">
+        <option value="fr-FR">FR</option>
+        <option value="en-US">EN</option>
+      </select>
+      <button id="menu-btn" class="icon-btn" aria-label="Menu" aria-haspopup="true" aria-expanded="false">⋮</button>
+    </div>
+  </header>
+
+  <div id="menu" class="menu hidden">
+    <button id="export-btn">⬇️ Exporter (.json)</button>
+    <button id="export-txt-btn">⬇️ Exporter (.txt)</button>
+    <button id="clear-btn" class="danger">🗑️ Tout effacer</button>
+  </div>
+
+  <main class="capture-zone">
+    <button id="mic-btn" class="mic-btn" aria-pressed="false" aria-label="Démarrer la capture vocale">
+      <span class="mic-icon">🎙️</span>
+      <span class="mic-ring"></span>
+    </button>
+    <p id="mic-status" class="mic-status">Appuyez pour parler</p>
+    <p id="live-transcript" class="live-transcript" aria-live="polite"></p>
+    <p id="unsupported-msg" class="unsupported hidden">
+      La reconnaissance vocale n'est pas disponible sur ce navigateur.
+      Essayez Chrome ou Safari récent, ou ajoutez vos idées manuellement ci-dessous.
+    </p>
+  </main>
+
+  <form id="manual-form" class="manual-form">
+    <input id="manual-input" type="text" placeholder="…ou tapez une idée ici" autocomplete="off">
+    <button type="submit" class="add-btn" aria-label="Ajouter">＋</button>
+  </form>
+
+  <div class="search-row">
+    <input id="search-input" type="search" placeholder="Rechercher dans mes idées…" autocomplete="off">
+    <span id="count-badge" class="count-badge">0</span>
+  </div>
+
+  <ul id="idea-list" class="idea-list"></ul>
+  <p id="empty-state" class="empty-state">
+    Aucune idée pour l'instant.<br>Appuyez sur le micro et commencez à parler — chaque pause enregistre une nouvelle idée.
+  </p>
+</div>
+
+<div id="toast" class="toast" aria-live="polite"></div>
+
+<script src="app.js"></script>
