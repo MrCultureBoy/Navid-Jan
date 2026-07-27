@@ -13,3 +13,10 @@ _includes/notes_graph.json
 
 # Obsidian config
 .obsidian/
+
+# Swift / Xcode
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
